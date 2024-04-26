@@ -136,7 +136,7 @@ def load_saiga_model(model_id: str) -> tp.Tuple:
         load_in_8bit=True,
         torch_dtype=torch.float16,
         device_map="auto"
-
+    )
     model = peft.PeftModel.from_pretrained(
         model,
         model_id,
