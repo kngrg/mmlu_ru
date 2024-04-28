@@ -115,7 +115,7 @@ def load_llama_model(model_id: str) -> tp.Tuple:
         model_id,
         use_fast=False,
         token=access_token,
-        model_max_length=64 #this parameter for only mistral
+        #model_max_length=64 #this parameter for only mistral
     )
     model = transformers.AutoModelForCausalLM.from_pretrained(
         model_id,
