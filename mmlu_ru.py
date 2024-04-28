@@ -114,12 +114,14 @@ def load_llama_model(model_id: str) -> tp.Tuple:
     tokenizer = transformers.AutoTokenizer.from_pretrained(
         model_id,
         use_fast=False,
+        token=access_token
     )
     model = transformers.AutoModelForCausalLM.from_pretrained(
         model_id,
         torch_dtype=torch.float16,
         load_in_8bit=True,
         device_map="cuda:0",
+        token=access_token
     )
     model.eval()
     logger.info(f"Model id: {model_id}, params: {model.num_parameters()}, dtype: {model.dtype}")
@@ -154,7 +156,11 @@ def load_model_components(model_id: str) -> tp.Tuple:
                     "NousResearch/Meta-Llama-3-8B", "/content/models/Llama3-8b-cropped_8", "/content/models/Llama3-8b-cropped_7",
                     "/content/models/Llama3-8b-cropped_6",
                     "/content/models/Llama3-8b-cropped_4", "/content/models/Llama3-8b-cropped_2", "/kaggle/working/models/Llama3-8b-cropped_8",
-                    "/kaggle/working/models/Llama3-8b-cropped_6","/kaggle/working/models/Llama3-8b-cropped_4", "/kaggle/working/models/Llama3-8b-cropped_2"]
+                    "/kaggle/working/models/Llama3-8b-cropped_6","/kaggle/working/models/Llama3-8b-cropped_4", "/kaggle/working/models/Llama3-8b-cropped_2",
+                    "mistralai/Mistral-7B-v0.1", "/kaggle/working/models/Mistral-7b_cropped_2"
+                    "/kaggle/working/models/Mistral-7b_cropped_4", "/kaggle/working/models/Mistral-7b_cropped_6", "/kaggle/working/models/Mistral-7b_cropped_8",
+                    "/content/models/Mistral-7b_cropped_2", "/content/models/Mistral-7b_cropped_4", "/content/models/Mistral-7b_cropped_6",
+                    "/content/models/Mistral-7b_cropped_8"]
     saiga_models = ["IlyaGusev/saiga_7b_lora", "IlyaGusev/saiga_13b_lora", "IlyaGusev/saiga_30b_lora", "IlyaGusev/saiga_65b_lora"]
 
     if model_id in llama_models:
