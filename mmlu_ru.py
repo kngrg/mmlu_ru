@@ -159,7 +159,7 @@ def load_model_components(model_id: str) -> tp.Tuple:
                     "/content/models/Llama3-8b-cropped_4", "/content/models/Llama3-8b-cropped_2", "/kaggle/working/models/Llama3-8b-cropped_8",
                     "/kaggle/working/models/Llama3-8b-cropped_6","/kaggle/working/models/Llama3-8b-cropped_4", "/kaggle/working/models/Llama3-8b-cropped_2",
                     "mistralai/Mistral-7B-v0.1",
-                    "/kaggle/working/models/Mistral-7b_cropped_2" 
+                    "/kaggle/working/models/Mistral-7b_cropped_2",
                     "/kaggle/working/models/Mistral-7b_cropped_4", "/kaggle/working/models/Mistral-7b_cropped_6", "/kaggle/working/models/Mistral-7b_cropped_8",
                     "/content/models/Mistral-7b_cropped_2", "/content/models/Mistral-7b_cropped_4", "/content/models/Mistral-7b_cropped_6",
                     "/content/models/Mistral-7b_cropped_8"]
