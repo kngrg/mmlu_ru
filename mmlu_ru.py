@@ -162,7 +162,9 @@ def load_model_components(model_id: str) -> tp.Tuple:
                     "/kaggle/working/models/Mistral-7b_cropped_2",
                     "/kaggle/working/models/Mistral-7b_cropped_4", "/kaggle/working/models/Mistral-7b_cropped_6", "/kaggle/working/models/Mistral-7b_cropped_8",
                     "/content/models/Mistral-7b_cropped_2", "/content/models/Mistral-7b_cropped_4", "/content/models/Mistral-7b_cropped_6",
-                    "/content/models/Mistral-7b_cropped_8"]
+                    "/content/models/Mistral-7b_cropped_8",
+                    "/content/models/Llama3-8b-croped_30", "/content/models/Llama3-8b-croped_28", "/content/models/Llama3-8b-croped_26",
+                    "/content/models/Llama3-8b-croped_24"]
     saiga_models = ["IlyaGusev/saiga_7b_lora", "IlyaGusev/saiga_13b_lora", "IlyaGusev/saiga_30b_lora", "IlyaGusev/saiga_65b_lora"]
 
     if model_id in llama_models:
