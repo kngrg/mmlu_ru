@@ -120,7 +120,7 @@ def load_llama_model(model_id: str) -> tp.Tuple:
     model = transformers.AutoModelForCausalLM.from_pretrained(
         model_id,
         torch_dtype=torch.float16,
-        load_in_8bit=True,
+        #load_in_8bit=True,
         device_map="cuda:0",
         token=access_token
     )
