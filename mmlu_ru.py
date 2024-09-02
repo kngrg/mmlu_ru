@@ -164,7 +164,8 @@ def load_model_components(model_id: str) -> tp.Tuple:
                     "/content/models/Mistral-7b_cropped_2", "/content/models/Mistral-7b_cropped_4", "/content/models/Mistral-7b_cropped_6",
                     "/content/models/Mistral-7b_cropped_8",
                     "/content/models/Llama3-8b-cropped_30", "/content/models/Llama3-8b-cropped_28", "/content/models/Llama3-8b-cropped_26",
-                    "/content/models/Llama3-8b-cropped_24", "/workdir/diploma-llm/models/Llama3-8b-cropped_4"]
+                    "/content/models/Llama3-8b-cropped_24", "/workdir/diploma-llm/models/Llama3-8b-cropped_4", "/workdir/diploma-llm/models/Llama3-8b-28l"
+                    ]
     saiga_models = ["IlyaGusev/saiga_7b_lora", "IlyaGusev/saiga_13b_lora", "IlyaGusev/saiga_30b_lora", "IlyaGusev/saiga_65b_lora"]
 
     if model_id in llama_models:
@@ -206,7 +207,7 @@ def calculate_token_interest_probs(
 
 def append_to_jsonl(data: list, filename: str) -> None:
     with open(filename, "a") as f:
-        f.write(json.dumps(data) + "\n")
+        f.write(json.dumps(data, ensure_ascii=False) + "\n")
 
 def evaluate_subject(
     subject: str,
