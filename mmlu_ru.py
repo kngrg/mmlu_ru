@@ -136,7 +136,7 @@ def load_saiga_model(model_id: str) -> tp.Tuple:
     config = peft.PeftConfig.from_pretrained(model_id)
     model = transformers.AutoModelForCausalLM.from_pretrained(
         config.base_model_name_or_path,
-        load_in_8bit=True,
+       #load_in_8bit=False,
         torch_dtype=torch.float16,
         device_map="auto"
     )
