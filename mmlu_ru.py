@@ -164,7 +164,9 @@ def load_model_components(model_id: str) -> tp.Tuple:
                     "/content/models/Mistral-7b_cropped_2", "/content/models/Mistral-7b_cropped_4", "/content/models/Mistral-7b_cropped_6",
                     "/content/models/Mistral-7b_cropped_8",
                     "/content/models/Llama3-8b-cropped_30", "/content/models/Llama3-8b-cropped_28", "/content/models/Llama3-8b-cropped_26",
-                    "/content/models/Llama3-8b-cropped_24", "/workdir/diploma-llm/models/Llama3-8b-cropped_4",
+                    "/content/models/Llama3-8b-cropped_24",
+                    "/workdir/diploma-llm/models/Llama3-8b-cropped_30", "/workdir/diploma-llm/models/Llama3-8b-cropped_28", "/workdir/diploma-llm/models/Llama3-8b-cropped_26",
+                    "/workdir/diploma-llm/models/Llama3-8b-cropped_24",
                     "/workdir/diploma-llm/models/Llama3-8b-30l", "/workdir/diploma-llm/models/Llama3-8b-28l", "/workdir/diploma-llm/models/Llama3-8b-26l",
                     "/workdir/diploma-llm/models/Llama3-8b-24l"
                     ]
