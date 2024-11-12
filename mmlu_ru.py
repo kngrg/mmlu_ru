@@ -168,7 +168,8 @@ def load_model_components(model_id: str) -> tp.Tuple:
                     "/workdir/diploma-llm/models/Llama3-8b-cropped_30", "/workdir/diploma-llm/models/Llama3-8b-cropped_28", "/workdir/diploma-llm/models/Llama3-8b-cropped_26",
                     "/workdir/diploma-llm/models/Llama3-8b-cropped_24",
                     "/workdir/diploma-llm/models/Llama3-8b-30l", "/workdir/diploma-llm/models/Llama3-8b-28l", "/workdir/diploma-llm/models/Llama3-8b-26l",
-                    "/workdir/diploma-llm/models/Llama3-8b-24l"
+                    "/workdir/diploma-llm/models/Llama3-8b-24l",
+                    "RefalMachine/ruadapt_qwen2.5_3B_ext_u48_instruct_v4"
                     ]
     saiga_models = ["IlyaGusev/saiga_7b_lora", "IlyaGusev/saiga_13b_lora", "IlyaGusev/saiga_30b_lora", "IlyaGusev/saiga_65b_lora"]
 
